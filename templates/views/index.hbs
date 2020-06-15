@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="main-content">
+    {{>header}}
+    <p>Use this site to get weather information in your location.</p>
+    <form action="">
+      <input type="text" placeholder="Your address" id="address">
+      <button id="submit-btn">Search</button>
+    </form>
+    <p id="error-msg"></p>
+    <div id="forecast-info">
+      <p id="location"></p>
+      <p id="weather"></p>
+      <p id="temperature"></p>
+      <p id="feelslike"></p>
+      <p id="precip"></p>
+    </div>
+  </div>
+  {{>footer}}
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
