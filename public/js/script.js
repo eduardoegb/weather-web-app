@@ -15,7 +15,7 @@ submitBtn.addEventListener('click', event => {
   const address = addressInput.value;
 
   if (address) {
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`/weather?address=${address}`)
     .then(response => response.json())
     .then(data => {
       const { error, location, forecast: { weather, temperature, feelslike, precip } = {} } = data;
